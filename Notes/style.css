@@ -1,0 +1,45 @@
+body {
+  height: 100vh;
+}
+
+.grid-container {
+  border: 2px solid rebeccapurple;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-gap: 10px;
+  padding: 2px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  grid-template-areas: "a a a"
+  "b b b"
+  "c c c";
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed plum;
+}
+
+#one {
+grid-area: a;
+}
+
+#two {
+  grid-area: 2/1/2/2;
+}
+
+#three {
+  grid-area: 2/2/2/2;
+}
+
+#four {
+  grid-area: 2/3/2/3;
+}
+
+#five {
+  grid-area: c;
+}
